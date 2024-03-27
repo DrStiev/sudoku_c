@@ -8,7 +8,12 @@ int main()
 
     int** puzzle;
     puzzle = createPuzzle(3);
+    printf("Starting sudoku\n");
     printPuzzle(puzzle);
+    printf("Solved sudoku\n");
+    solveSudoku(puzzle);
+    printPuzzle(puzzle);
+    printf("Free memory\n");
     freePuzzle(puzzle);
     return 0;
 }
